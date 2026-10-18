@@ -1,0 +1,137 @@
+
+// Stuck? Read the docs first, then ask me for help!
+//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference
+
+//******************* FUNDAMENTALS **************************************
+
+//**STEP 1**: create a variable called `myName` and set it to the value of your actual name
+
+// WRITE CODE BELOW THIS COMMENT
+
+//**STEP 2**: create a new variable called "age" and set it to your age. Print the type of this variable to the console.
+
+// WRITE CODE BELOW THIS COMMENT
+
+//**STEP 3**: Set a new variable called sentence to a string that reads like: My name is Sam and I am 21 Years Old. Use String Interpolation to achieve this. Print this to the console when you are done.
+
+// WRITE CODE BELOW THIS COMMENT
+
+//**STEP 4**: create an IF/ELSE statement that logs the myName variable and the string " is an adult" if your age variable is 18 or over OR myName + " is not an adult" if your age variable is below 18 years old.
+
+// WRITE CODE BELOW THIS COMMENT
+
+//**STEP 5**: write another IF/ELSE statement that evaluates to true if the day is Tuesday.
+
+// WRITE CODE BELOW THIS COMMENT
+let day = "Tuesday";
+
+//**STEP 6**: Copy and Paste your Step 5 code below. Modify it so it uses the Ternary Operator
+
+// WRITE CODE BELOW THIS COMMENT
+
+//**STEP 7**: Write a function called: daysOnEarth that returns the number of days that someone has been on the planet for. Hint: this function should take one parameter.
+
+// WRITE CODE BELOW THIS COMMENT
+
+//**STEP 8**: Add a default parameter to your function in Step 7.
+
+//**STEP 9**: Write a function of your choice using the arrow notation
+
+// WRITE CODE BELOW THIS COMMENT
+
+//**STEP 10**: Write two more function using the arrow notation format.
+
+// WRITE CODE BELOW THIS COMMENT
+
+//******************* CLASSES **************************************
+//******************************************************************
+
+//**STEP 1**: Create a class that represents any 'Animal' you choose
+
+//**STEP 2**: Make two seperate instances of your 'Animal' class
+
+//**STEP 3**: Make a class that represents a 'Car', add some properties, some getters/setters, and two more functions of your choice
+
+//**STEP 4**: Make two seperate instances of your 'Car' class
+
+//******************* OBJECTS **************************************
+//******************************************************************
+
+const exampleObject = {
+	exampleKey: "exampleValue",
+	exampleKey2: "exampleValue2"
+};
+
+console.log(exampleObject.exampleKey);
+console.log(exampleObject["exampleKey2"]);
+
+//**STEP 1**: Look at the exampleObject literal, create an object literal representing you! Have at least 5 properties (e.g., name, hometown, favourite chocolate bar...etc)
+
+//**STEP 3**: Log the entire object literal to the console.
+
+//**STEP 4**: Log each individual properties from Step 1 using the dot notation or bracket notation.
+
+//**STEP 5**: create an object literal with exactly one function that takes one parameter
+
+//**STEP 6**: create an object literal that represents a movie character, give it some properites and a few functions that say famous quotes when called.
+
+//**STEP 7**: Write another object literal that represents a food item. Give it a quantitiy and price (as if it were a product on a website)
+
+//************* LOOPS *****************
+//******************************************************************
+
+//**STEP *1* Create a FOR loop that runs from 0 to 9.
+
+//**STEP *2* Create a loop that runs WHILE i is less than 10.
+
+//**STEP *3* Create a loop that runs WHILE long as i is less than 10, but increase i by 2 each time.
+
+//**STEP *4* Uncomment and Finish the loop below. Replace the ??? with code.
+
+// let i = 99;
+// while (i ??? 0)
+// {
+//     ???(i + " bottles of beer on the wall");
+//     i ??? 1;
+// }
+
+//**STEP *4* Modify the loop above so it is a DO WHILE loop
+
+//**STEP *5* Write a nested FOR LOOP
+
+//************* ARRAYS *****************
+//******************************************************************
+
+//**STEP *1*: What is the second element of this array? Print it to the console.
+
+let lotteryNumbers = [44, 48, 22, 3, 4, 78];
+
+//**STEP *2*: Print the 0th element of this array to the console.
+let hotelFloors = [
+	"Ground Floor",
+	"First Floor",
+	"Second Floor",
+	"Third Floor",
+	"Executive Floor"
+];
+
+//**STEP *3*: Add 3 animals to the array intialization below
+let animals = [];
+
+//**STEP *4*: Print the whole array to the console
+
+//**STEP *5*: Print the length of the animals array to the console
+
+//**STEP *6*: Using push (see MDN link), add another animal to the array
+
+//**STEP *7*: Declare and initialize an array called 'Planets' with 5 string values
+
+//**STEP *8*: Console.log each item in the 'Planets' array on a seperate line
+
+//**STEP *9*: Using a loop, iterate through this array and console.log all of the people.
+
+// WRITE CODE BELOW THIS COMMENT
+
+let people = ["Greg", "Mary", "Devon", "James"];
+
+//**STEP *10*: On the 'people' array above, use a new function you've found from reading the Arrays MDN pages.

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>JS Lab</title>
+  </head>
+  <body>
+
+    <h1>JS Fundamentals Lab</h1>
+    <p>Open your browser's console (right-click → Inspect → Console tab) to see the output.</p>
+
+    <script>
+      //******************* FUNDAMENTALS **************************************
+
+      //**STEP 1**: create a variable called `myName` and set it to the value of your actual name
+      let myName = "Aliya";
+
+      //**STEP 2**: create a new variable called "age" and set it to your age. Print the type of this variable to the console.
+      let age = 21;
+      console.log(typeof age);
+
+      //**STEP 3**: Set a new variable called sentence to a string that reads like:
+      // My name is Sam and I am 21 Years Old. Use String Interpolation to achieve this.
+      let sentence = `My name is ${myName} and I am ${age} Years Old.`;
+      console.log(sentence);
+
+      //**STEP 4**: create an IF/ELSE statement that logs the myName variable and the string
+      // " is an adult" if your age variable is 18 or over OR myName + " is not an adult" if below 18.
+
+        if (age >= 18){
+            console.log(myName + " is an adult");
+        }
+        else{
+            console.log(myName + " is not an adult");
+        }
+
+      //**STEP 5**: write another IF/ELSE statement that evaluates to true if the day is Tuesday.
+      console.log("Step 5 - Check if today is Tuesday");
+       today = new Date();
+
+       if (today.getDay() === 2 ){
+           console.log("Today is Tuesday");
+       }
+       else{
+           console.log("Today is not Tuesday");
+       }
+
+        //**STEP 6**: Copy and Paste your Step 5 code below. Modify it so it uses the Ternary Operator
+        
+      console.log("Step 6 - Check if today is Monday using Ternary Operator");
+
+        function dateTuesday(today){
+            return (today.getDay() === 1) ? "Today is Monday" : "Today is not Monday";
+        }
+
+        // getDay() output: 0 = Sunday, 1 = Monday, 2 = Tuesday, 3 = Wednesday, 4 = Thursday, 5 = Friday, 6 = Saturday
+
+        console.log(dateTuesday(today));
+
+        //**STEP 7**: Write a function called: daysOnEarth that returns the number of days that someone has been on the planet for. 
+        // Hint: this function should take one parameter.
+
+        //Create a Temporal object
+
+      function daysOnEarth(birthday = Temporal.Now.plainDateISO()) {
+        const today = Temporal.Now.plainDateISO();
+        const birthDate = Temporal.PlainDate.from(birthday);
+        return birthDate.until(today, { largestUnit: 'day' }).days;
+      }
+
+      console.log("You were alive for "+ daysOnEarth({ year: 2005, month: 3, day: 25 }) + " days"); // 7877 (on 2026-10-18)
+
+
+        //**STEP 8**: Add a default parameter to your function in Step 7.
+
+        console.log("You were alive for " + daysOnEarth() + " days");
+
+        // added birthday = Temporal.Now.plainDateISO() in the function parameter to set the default value 
+        // to the current date if no argument is provided.
+
+        //**STEP 9**: Write a function of your choice using the arrow notation
+
+        const greet = (name) => `Hello, ${name}! Welcome to the JavaScript Lab.`;
+
+        console.log(greet("Aliya")); // Output: Hello, Aliya! Welcome to the JavaScript Lab.
+
+        //this function works by taking a name as an argument and returning a greeting message 
+        // that includes the provided name. The arrow notation is used to define the function in a concise way.
+
+        // the arrow notation is a shorthand syntax for defining functions in JavaScript. 
+        // It allows you to write functions more concisely, especially for simple operations. 
+        // In this case, the arrow function takes a single parameter (name) and returns a string that includes that parameter.
+
+        //**STEP 10**: Write two more function using the arrow notation format.
+
+        const divideNuumbers = (a,b) => `${a} / ${b} = ${a / b}`;
+
+        console.log(divideNuumbers(10, 2)); // Output: a / b = 10 / 2
+
+        const splitstring = (str) => str.toLowerCase().split("e") //e or E
+
+        console.log(splitstring("Eleven")); 
+
+
+    </script>
+  </body>
+</html>
